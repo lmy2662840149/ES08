@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class NumAdd {
+           constructor() {
+               this.num = 0;
+               this.str="abcd"
+               //T1
+               setInterval(()=> {
+                   if (this.num != 5) {
+                       this.num++;
+                       console.log(this.num);
+                   }
+               },1000);
+           }
+        
+
+        strobj={
+            str:"xyz",
+            //T2
+            dispStr:function(){
+                console.log(this.str)
+            }
+          }
+        }
+        let numAdd=new NumAdd();
+        numAdd.strobj.dispStr();
+    </script>
+</body>
+</html>
